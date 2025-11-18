@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Points Alert Demo</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #111;
+            color: white;
+            padding: 20px;
+        }
+
+        #pointsAlert {
+            display: none; 
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #222;
+            border: 2px solid #00e676;
+            padding: 15px 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px #00e676;
+            z-index: 999;
+        }
+
+        #pointsAlert .closeBtn {
+            float: right;
+            cursor: pointer;
+            font-weight: bold;
+            color: #ccc;
+        }
+
+        #pointsAlert .closeBtn:hover {
+            color: white;
+        }
+
+        #pointsAlert .msg {
+            margin-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<button id="earnBtn">Earn 20 Points</button>
+
+
+<div id="pointsAlert">
+    <span class="closeBtn">×</span>
+    <span class="msg">Points Earned!</span>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./app.js"></script>
+
+</body>
+</html>
