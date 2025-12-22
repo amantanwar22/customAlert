@@ -13,25 +13,25 @@
         }
 
         #pointsAlert {
-    display: none;
-    position: fixed;
-
-    top: 50%;
-    left: 50%;
-    margin: 0;
-    padding: 15px 20px;
-    box-sizing: border-box;
-    transform: translate3d(-50%, -50%, 0);
-    background: #222;
-    border: 2px solid #00e676;
-    border-radius: 8px;
-    box-shadow: 0 0 15px #00e676;
-    z-index: 999;
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #222;
+            border: 2px solid #00e676;
+            border-radius: 8px;
+            box-shadow: 0 0 15px #00e676;
+            padding: 15px 20px;
+            z-index: 999;
+            max-width: 300px;
+            text-align: center;
         }
 
-
         #pointsAlert .closeBtn {
-            float: right;
+            position: absolute;
+            top: 6px;
+            right: 10px;
             cursor: pointer;
             font-weight: bold;
             color: #ccc;
@@ -41,8 +41,15 @@
             color: white;
         }
 
+        #pointsAlert .alertImage {
+            display: none;
+            max-width: 100%;
+            margin-bottom: 10px;
+            border-radius: 6px;
+        }
+
         #pointsAlert .msg {
-            margin-right: 20px;
+            display: block;
         }
     </style>
 </head>
@@ -51,15 +58,15 @@
 
 <button id="earnBtn">Earn 20 Points</button>
 
-
 <div id="pointsAlert">
     <span class="closeBtn">×</span>
+    <img class="alertImage" />
     <span class="msg">Points Earned!</span>
 </div>
-
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="./app.js"></script>
 
 </body>
 </html>
+
